@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "38BF6785-2E24-443A-A74F-877FAA671D37"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32E3CFE6-4860-4265-BD04-42F75FAA1E23"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CazooSDK/Sources/VechilesClient/VechilesClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "live"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "32E3CFE6-4860-4265-BD04-42F75FAA1E23 - 5b7edbd04fa98ab9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Models.CazooError) -&gt; Combine.AnyPublisher&lt;Models.Vechiles, Models.CazooError&gt; in closure #1 () -&gt; ComposableArchitecture.Effect&lt;Models.Vechiles, Models.CazooError&gt; in variable initialization expression of static VechilesClient.VechilesClient.live : VechilesClient.VechilesClient"
+                  moduleName = "Cazoo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a19172093/IOS%20Projects/Cazoo/CazooSDK/Sources/VechilesClient/VechilesClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  uuid = "32E3CFE6-4860-4265-BD04-42F75FAA1E23 - b856758fcd2daebe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Models.CazooError) -&gt; Combine.AnyPublisher&lt;Models.Vechiles, Models.CazooError&gt; in closure #1 () -&gt; ComposableArchitecture.Effect&lt;Models.Vechiles, Models.CazooError&gt; in variable initialization expression of static VechilesClient.VechilesClient.live : VechilesClient.VechilesClient"
+                  moduleName = "VechilesFeatureTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a19172093/IOS%20Projects/Cazoo/CazooSDK/Sources/VechilesClient/VechilesClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "93">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
