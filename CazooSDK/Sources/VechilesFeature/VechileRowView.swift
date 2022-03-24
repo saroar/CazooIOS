@@ -2,6 +2,7 @@ import SwiftUI
 import ComposableArchitecture
 import Models
 import Combine
+import SwiftUIHelper
 
 struct VechileListView: View {
 	public let store: Store<VechilesState, VechilesAction>
@@ -69,37 +70,8 @@ struct VechileRowView: View {
 	var body: some View {
 		WithViewStore(self.store) { viewStore in
 			VStack {
-				AsyncImage(url: URL(string: viewStore.images.main.url)) { phase in
-					switch phase {
-					case .empty:
-						Image(systemName: "car")
-							.resizable()
-							.scaledToFit()
-							.padding(40)
-							.background(Color.gray.opacity(0.2))
-							.overlay(
-								ProgressView()
-								.padding()
-								.background(Color.white)
-								.cornerRadius(10)
-								.shadow(radius: 10)
-								//.opacity(viewStore.isLoading ? 1 : 0)
-							)
-					case .success(let image):
-						image
-							.resizable()
-							.scaledToFill()
-					case .failure(_):
-						Image(systemName: "exclamationmark.icloud")
-							.resizable()
-							.scaledToFit()
-					@unknown default:
-						Image(systemName: "exclamationmark.icloud")
-					}
-				}
-				.frame(maxWidth: .infinity, alignment: .leading)
-				.padding()
-
+				VechileAsyncImageView(url: URL(string: viewStore.images.main.url))
+					.padding()
 
 				VStack {
 					Text("\(viewStore.model)")

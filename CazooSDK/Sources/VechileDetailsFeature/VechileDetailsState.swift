@@ -22,5 +22,5 @@ public struct VechileDetailsState: Equatable, Hashable {
 }
 
 extension VechileDetailsState {
-	static let mockData: VechileDetailsState = .init(productId: "43e483e6-cbbb-5059-b8ec-51a0eef5af37", vechilesD: .mockData, isLoading: false, imageGallery: ImageGallery.mockDatas)
+	static let mockData: VechileDetailsState = .init(productId: "43e483e6-cbbb-5059-b8ec-51a0eef5af37", vechilesD: .mockData, isLoading: true, imageGallery: ImageGallery.mockDatas)
 }

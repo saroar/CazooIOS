@@ -7,6 +7,7 @@ public var vechileDetailsReducer = Reducer<VechileDetailsState, VechileDetailsAc
 	switch action {
 
 	case .onAppear:
+		state.isLoading = true
 		return environment.vechilesClient
 			.vechileDetails(state.productId)
 			.receive(on: environment.mainQueue)
@@ -15,6 +16,7 @@ public var vechileDetailsReducer = Reducer<VechileDetailsState, VechileDetailsAc
 
 
 	case let .vechileDetailsResponse(.success(response)):
+		state.isLoading = false
 		state.vechilesD = response
 		state.imageGallery = response.imageGallery
 		return .none

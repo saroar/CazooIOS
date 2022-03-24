@@ -227,10 +227,10 @@ public struct FuelConsumptionCostPerWeek: Codable, Equatable, Hashable {
 
 // MARK: - ServiceHistory
 public struct ServiceHistory: Codable, Equatable, Hashable {
-	public let franchiseType, source, date: String
+	public let franchiseType, source, date: String?
 	public let odometer: Odometer
 
-	public init(franchiseType: String, source: String, date: String, odometer: Odometer) {
+	public init(franchiseType: String? = nil, source: String? = nil, date: String? = nil, odometer: Odometer) {
 		self.franchiseType = franchiseType
 		self.source = source
 		self.date = date
@@ -265,12 +265,12 @@ public struct VehicleHistory: Codable, Equatable, Hashable {
 public struct MotHistory: Codable, Equatable, Hashable {
 	public let testDate, expiryDate: String?
 	public let hasPassed: Bool
-	public let mileage: Int
+	public let mileage: Int?
 	public let failures: String?
 	public let advisories: String?
 	public let minors: String?
 
-	public init(testDate: String, expiryDate: String, hasPassed: Bool, mileage: Int, failures: String? = nil, advisories: String? = nil, minors: String? = nil) {
+	public init(testDate: String, expiryDate: String, hasPassed: Bool, mileage: Int? = nil, failures: String? = nil, advisories: String? = nil, minors: String? = nil) {
 		self.testDate = testDate
 		self.expiryDate = expiryDate
 		self.hasPassed = hasPassed

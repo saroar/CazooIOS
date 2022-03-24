@@ -30,7 +30,7 @@ let package = Package(
 			name: "VechilesFeature",
 			dependencies: [
 				.product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
-				"Models", "VechilesClient", "VechileDetailsFeature"
+				"Models", "VechilesClient", "VechileDetailsFeature", "SwiftUIHelper"
 			]
 		),
 		.testTarget(name: "VechilesFeatureTests", dependencies: ["VechilesFeature"]),
@@ -38,7 +38,7 @@ let package = Package(
 			name: "VechileDetailsFeature",
 			dependencies: [
 				.product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
-				"Models", "VechilesClient"
+				"Models", "VechilesClient", "SwiftUIHelper"
 			]
 		),
 		.target(
